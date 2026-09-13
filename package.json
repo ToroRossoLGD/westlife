@@ -1,0 +1,6 @@
+{
+  "name": "westlife",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "start": "node server.mjs", "dev": "node server.mjs", "check": "node --check app.js && node --check server.mjs" }
+}
