@@ -5,6 +5,7 @@ const files = { '/': ['index.html', 'text/html; charset=utf-8'], '/index.html': 
 files['/portal.css'] = ['portal.css', 'text/css; charset=utf-8'];
 files['/presentation.html'] = ['presentation.html', 'text/html; charset=utf-8'];
 files['/presentation.js'] = ['presentation.js', 'text/javascript; charset=utf-8'];
+files['/saradnici.html'] = ['saradnici.html', 'text/html; charset=utf-8'];
 http.createServer(async (req, res) => {
   const file = files[new URL(req.url, 'http://localhost').pathname];
   if (!file) { res.writeHead(404); res.end('Not found'); return; }
