@@ -1,6 +1,6 @@
 # WestLife
 
-Sajt na srpskom za brokersku firmu za osiguranje WestLife.
+Portal na srpskom za saradnike brokerske firme WestLife.
 
 ## Pokretanje
 
@@ -20,7 +20,9 @@ npm run check
 
 ## Trenutno stanje
 
-- Responzivna početna stranica sa pregledom osiguranja i čestim pitanjima.
-- Demo obrazac priprema tekstualni upit za preuzimanje. Ne šalje niti čuva podatke na serveru.
-- Pre objavljivanja potvrditi poslovne podatke i ponudu i povezati slanje upita.
-- Fotografija se učitava sa Unsplash-a, a fontovi preko Google Fonts-a.
+- Početni ekran je evidencija klijenata sa pretragom, filterom statusa i brojačima.
+- Unos i izmena kontakta, vrste osiguranja, saradnika, sledećeg kontakta i napomene.
+- Podaci se čuvaju u localStorage ovog browsera; ovo je lokalni prototip za izmišljene podatke, bez autentifikacije i zajedničke baze. Brisanje podataka browsera briše evidenciju.
+- Zapis se može preuzeti kao tekst za ručni rad. Nema integracije sa Generalijem; status „Spremno za Generali“ ne znači da je išta poslato ili da je polisa izdata.
+- Pre stvarne upotrebe potrebno je povezati odobreni sistem, prijavu i prava pristupa saradnika.
+- Prethodna prezentaciona stranica je sačuvana na `/presentation.html`.
