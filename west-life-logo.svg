@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 76" fill="none">
   <title>West Life — W L u elipsi</title>
-  <ellipse cx="60" cy="38" rx="56" ry="32" stroke="#193c34" stroke-width="2.5"/>
-  <path d="M26 25L33 51L42 31L51 51L58 25M72 25V51H94" stroke="#193c34" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
+  <ellipse cx="60" cy="38" rx="56" ry="32" stroke="#193c34" stroke-width="4"/>
+  <text x="24" y="52" fill="#193c34" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700">W</text>
+  <text x="70" y="52" fill="#193c34" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700">L</text>
 </svg>
