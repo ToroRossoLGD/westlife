@@ -11,8 +11,25 @@ nav{align-items:center}
 .about-links a{display:flex;flex-direction:column;align-items:flex-start;gap:4px;padding:11px 12px;border-radius:5px;font-size:12px}
 .about-links a:hover{background:#edf2e6;color:var(--green)}
 .about-links small{font-size:11px;font-weight:400;color:var(--muted)}
-.footer-contact-details{display:flex;gap:80px;padding:0 0 30px}
+footer{max-width:none;background:var(--green);color:#fff;padding:48px max(5.5%,calc((100% - 1282px)/2)) 25px}
+footer .logo{color:#fff;white-space:nowrap}
+footer .logo-dot,footer .brand-mark span{color:var(--lime)}
+.footer-main{flex-wrap:wrap}
+.footer-main p{color:#c0cec5}
+footer a:hover{color:var(--lime)}
+.footer-contact-details{display:flex;gap:80px;padding:28px 0 32px;border-top:1px solid #ffffff26}
 .footer-contact-details h3{font-size:12px;font-weight:600;margin:0 0 9px}
-.footer-contact-details a,.footer-contact-details address{font-size:14px;font-style:normal;color:var(--muted)}
-.footer-contact-details a:hover{color:var(--green);text-decoration:underline}
+.footer-contact-details a,.footer-contact-details address{font-size:18px;font-style:normal;color:#e5eddf}
+.footer-contact-details h3{color:#c5d89c}
+.footer-contact-details a:hover{color:var(--lime);text-decoration:underline}
+.footer-bottom{border-color:#ffffff26;color:#c0cec5}
 @media(max-width:760px){nav{align-items:stretch}.about-links{position:static;min-width:0;margin-top:12px;box-shadow:none;background:#f0f3eb}.about-toggle{width:100%;justify-content:space-between}.footer-contact-details{flex-wrap:wrap;gap:25px 55px}}
+.partner-access{min-width:270px;max-width:100%}
+.partner-link{display:flex;flex-direction:column;gap:19px;padding:25px 30px;border:1px solid var(--line);border-radius:10px;background:#fff;transition:border-color .2s,box-shadow .2s}
+.partner-wordmark{font-family:Georgia,serif;font-size:29px;letter-spacing:2px;color:#b21e25}
+.partner-action{display:flex;justify-content:space-between;align-items:center;gap:25px;font-size:12px;font-weight:600}
+.partner-link[aria-disabled="true"]{cursor:default}
+.partner-link[aria-disabled="true"] .partner-action{color:var(--muted)}
+.partner-link[href]:hover{border-color:#b21e25;box-shadow:0 5px 20px #193c3410}
+.partner-access #generali-status{font-size:11px;margin-top:10px;line-height:1.6}
+@media(max-width:760px){.partner-access{width:100%;min-width:0}}

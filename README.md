@@ -1,29 +1,24 @@
-# West Life
+﻿# West Life
 
-Prezentacioni sajt brokerske firme West Life sa zasebnim portalom za saradnike.
+Prezentacioni sajt brokerske firme sa pristupom Generali sistemu sa početne stranice.
 
 ## Pokretanje
 
-Potreban je Node.js 18 ili noviji. Nema dodatnih zavisnosti.
+Potreban je Node.js 18 ili noviji. Pokrenite `npm start` i otvorite http://localhost:3000.
+Provera JavaScript sintakse: `npm run check`.
 
-```sh
-npm start
-```
+## Aktiviranje Generali pristupa
 
-Otvorite http://localhost:3000.
+U `partner-config.js` upišite odobrenu HTTPS adresu u `generali.url`.
+Prazna ili neispravna adresa ostavlja karticu bez linka, uz poruku da pristup stiže uskoro.
+Ispravna adresa aktivira celu karticu i otvara portal u novoj kartici.
+Konfiguracija je javna; ne unositi lozinke, tokene ili druge tajne.
+Trenutno se koristi tekstualna oznaka GENERALI, predviđena za zamenu zvaničnim logotipom kada bude dostavljen.
 
-## Provera
+## Opseg
 
-```sh
-npm run check
-```
-
-## Trenutno stanje
-
-- Početna stranica `/` predstavlja brokersku firmu i ponudu osiguranja. Na kraju stranice i u footeru nalazi se link „Za saradnike“.
-- Portal `/saradnici.html` sadrži evidenciju klijenata sa pretragom, filterom statusa i brojačima, uz povratak na glavni sajt.
-- Unos i izmena kontakta, vrste osiguranja, saradnika, sledećeg kontakta i napomene.
-- Podaci se čuvaju u localStorage ovog browsera; ovo je lokalni prototip za izmišljene podatke, bez autentifikacije i zajedničke baze. Brisanje podataka browsera briše evidenciju.
-- Zapis se može preuzeti kao tekst za ručni rad. Nema integracije sa Generalijem; status „Spremno za Generali“ ne znači da je išta poslato ili da je polisa izdata.
-- Pre stvarne upotrebe potrebno je povezati odobreni sistem, prijavu i prava pristupa saradnika.
-- Prethodna prezentaciona stranica je sačuvana na `/presentation.html`.
+- Pristup za saradnike je sekcija `/#saradnici`. Stara putanja `/saradnici.html` preusmerava na nju.
+- Poseban lokalni portal za klijente je uklonjen. Ranije sačuvani podaci u browseru se ne čitaju niti brišu.
+- Link ne prenosi klijente, ne prijavljuje saradnike i ne izdaje polise. Dublja integracija zavisi od dokumentacije i pristupa koje obezbedi Generali.
+- Javni kontakt obrazac priprema tekstualni upit za preuzimanje; nema slanja.
+- `/presentation.html` je dodatna prezentaciona stranica sa istom konfiguracijom partnera.

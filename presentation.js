@@ -67,3 +67,22 @@ document.querySelector('#contact-form').addEventListener('submit', (event) => {
   status.hidden = false;
 });
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+// Partner access is independent of the public contact form.
+const generaliAccess = document.querySelector('#generali-access');
+const generaliUrl = window.WEST_LIFE_PARTNERS?.generali?.url;
+if (generaliAccess && generaliUrl) {
+  try {
+    const destination = new URL(generaliUrl);
+    if (destination.protocol !== 'https:' || destination.username || destination.password) {
+      throw new Error('An HTTPS portal URL without credentials is required.');
+    }
+    generaliAccess.href = destination.href;
+    generaliAccess.target = '_blank';
+    generaliAccess.rel = 'noopener noreferrer';
+    generaliAccess.removeAttribute('aria-disabled');
+    document.querySelector('#generali-status').textContent = 'Otvara Generali sistem u novoj kartici.';
+  } catch {
+    // Invalid configuration keeps the link unavailable.
+  }
+}
