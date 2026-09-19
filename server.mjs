@@ -5,6 +5,7 @@ const files = { '/': ['index.html', 'text/html; charset=utf-8'], '/index.html': 
 files['/partner-config.js'] = ['partner-config.js', 'text/javascript; charset=utf-8'];
 files['/presentation.html'] = ['presentation.html', 'text/html; charset=utf-8'];
 files['/presentation.js'] = ['presentation.js', 'text/javascript; charset=utf-8'];
+files['/west-life-logo.svg'] = ['west-life-logo.svg', 'image/svg+xml'];
 http.createServer(async (req, res) => {
   if (new URL(req.url, 'http://localhost').pathname === '/saradnici.html') {
     res.writeHead(302, { Location: '/#saradnici' });
