@@ -33,3 +33,33 @@ footer a:hover{color:var(--lime)}
 .partner-link[href]:hover{border-color:#b21e25;box-shadow:0 5px 20px #193c3410}
 .partner-access #generali-status{font-size:11px;margin-top:10px;line-height:1.6}
 @media(max-width:760px){.partner-access{width:100%;min-width:0}}
+/* Prominent partner access */
+.partner-bar{max-width:1282px;margin:0 auto 10px;padding:15px 24px;display:flex;align-items:center;justify-content:space-between;gap:25px;background:#eef2e8;border:1px solid var(--line);border-radius:9px}
+.partner-bar-copy .eyebrow{font-size:9px;color:#718353;margin-bottom:6px}
+.partner-bar-copy p{font-size:14px;font-weight:500}
+.partner-bar .partner-access{min-width:350px}
+.partner-bar .partner-link{flex-direction:row;align-items:center;justify-content:space-between;padding:12px 19px;gap:25px;border-color:#dce2d4;border-radius:7px}
+.partner-bar .partner-wordmark{font-size:23px}
+.partner-bar .partner-action{font-size:11px;gap:12px}
+.partner-bar .partner-access #generali-status{font-size:9px;margin:5px 0 0;text-align:right}
+.life-stories{padding-top:0;padding-bottom:70px}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.story-card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.story-photo{position:relative;aspect-ratio:1.7;background:#e7ece1;overflow:hidden}
+.story-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.story-photo>span{position:absolute;bottom:20px;left:24px;background:#fafbf7ed;color:var(--green);padding:9px 12px;border-radius:4px;font-size:9px;letter-spacing:1.2px;font-weight:600}
+.story-copy{padding:29px 28px 30px}
+.story-copy h3{font-size:26px;line-height:1.35;letter-spacing:-.8px;font-weight:500}
+.story-copy p{font-size:13px;line-height:1.9;color:var(--muted);margin:17px 0 22px}
+.story-copy button{border:0;background:none;padding:0;color:var(--green);font:inherit;font-size:12px;font-weight:600;text-align:left}
+.story-copy button:hover{color:#82964f}
+.broker-guide{display:grid;grid-template-columns:1fr 1fr;gap:80px;background:#edf2e6;border-radius:12px;max-width:1282px;padding:45px;margin-bottom:75px}
+.guide-intro>p{font-size:13px;line-height:1.9;color:#65745e;margin:20px 0 22px;max-width:410px}
+.guide-items{display:grid;gap:23px;align-content:center}
+.guide-items article{display:flex;gap:18px;padding-bottom:22px;border-bottom:1px solid #d6dfca}
+.guide-items article:last-child{padding-bottom:0;border-bottom:0}
+.guide-items article>span{font-size:11px;color:#83995c;padding-top:3px}
+.guide-items h3{font-size:16px;font-weight:600;margin-bottom:7px}
+.guide-items p{font-size:12px;line-height:1.8;color:#65745e}
+@media(max-width:1440px){.partner-bar,.broker-guide{margin-left:5.5%;margin-right:5.5%}}
+@media(max-width:760px){.partner-bar{padding:14px 16px;gap:12px;flex-wrap:wrap;margin-top:3px}.partner-bar-copy p{display:none}.partner-bar-copy .eyebrow{margin:0}.partner-bar .partner-access{min-width:0;width:100%}.partner-bar .partner-link{padding:10px 14px;gap:15px}.partner-bar .partner-access #generali-status{text-align:left}.story-grid{grid-template-columns:1fr;gap:24px}.life-stories{padding-top:0;padding-bottom:45px}.story-copy{padding:23px}.story-copy h3{font-size:24px}.broker-guide{grid-template-columns:1fr;padding:28px 24px;gap:30px;margin-bottom:45px}.story-photo>span{left:20px;font-size:8px}}
