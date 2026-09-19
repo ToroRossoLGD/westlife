@@ -1,6 +1,6 @@
-# WestLife
+# West Life
 
-Prezentacioni sajt brokerske firme WestLife sa zasebnim portalom za saradnike.
+Prezentacioni sajt brokerske firme West Life sa zasebnim portalom za saradnike.
 
 ## Pokretanje
 

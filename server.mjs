@@ -11,4 +11,4 @@ http.createServer(async (req, res) => {
   if (!file) { res.writeHead(404); res.end('Not found'); return; }
   try { const body = await readFile(new URL(file[0], import.meta.url)); res.writeHead(200, { 'Content-Type': file[1] }); res.end(body); }
   catch { res.writeHead(500); res.end('Server error'); }
-}).listen(port, '127.0.0.1', () => console.log(`WestLife: http://localhost:${port}`));
+}).listen(port, '127.0.0.1', () => console.log(`West Life: http://localhost:${port}`));

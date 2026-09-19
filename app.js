@@ -65,9 +65,9 @@ form.addEventListener('submit', event => {
 document.querySelector('#download').addEventListener('click', () => {
   if (!valid()) return;
   const c = data();
-  const text = `WestLife — priprema podataka\n\nKlijent: ${c.name}\nTelefon: ${c.phone}\nEmail: ${c.email}\nOsiguranje: ${c.insurance}\nStatus: ${c.status}\nSledeći kontakt: ${c.followUp}\nSaradnik: ${c.associate}\nNapomena: ${c.note}\n\nPodaci nisu poslati u Generali. Ovaj zapis ne potvrđuje izdavanje polise.`;
+  const text = `West Life — priprema podataka\n\nKlijent: ${c.name}\nTelefon: ${c.phone}\nEmail: ${c.email}\nOsiguranje: ${c.insurance}\nStatus: ${c.status}\nSledeći kontakt: ${c.followUp}\nSaradnik: ${c.associate}\nNapomena: ${c.note}\n\nPodaci nisu poslati u Generali. Ovaj zapis ne potvrđuje izdavanje polise.`;
   if (downloadUrl) URL.revokeObjectURL(downloadUrl);
   downloadUrl = URL.createObjectURL(new Blob(['\uFEFF', text], { type: 'text/plain;charset=utf-8' }));
-  const link = document.createElement('a'); link.href = downloadUrl; link.download = 'westlife-klijent.txt'; link.click();
+  const link = document.createElement('a'); link.href = downloadUrl; link.download = 'West Life-klijent.txt'; link.click();
 });
 render();
