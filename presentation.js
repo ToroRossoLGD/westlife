@@ -45,28 +45,9 @@ document.addEventListener('keydown', (event) => {
 });
 document.querySelectorAll('[data-insurance]').forEach((card) => {
   card.addEventListener('click', () => {
-    document.querySelector('#insurance-select').value = card.dataset.insurance;
-    document.querySelector('#kontakt').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
-    document.querySelector('[name="name"]').focus({ preventScroll: true });
+    document.querySelector('#footer-kontakt').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
   });
-});
-let downloadUrl;
-document.querySelector('#contact-form').addEventListener('submit', (event) => {
-  event.preventDefault();
-  const data = new FormData(event.currentTarget);
-  const content = `West Life — upit za osiguranje\n\nIme: ${data.get('name')}\nEmail: ${data.get('email')}\nOsiguranje: ${data.get('insurance') || 'Savet pri izboru'}\n\n${data.get('message') || ''}\n\nDemo upit — nije poslat West Life timu.`;
-  if (downloadUrl) URL.revokeObjectURL(downloadUrl);
-  downloadUrl = URL.createObjectURL(new Blob(['\uFEFF', content], { type: 'text/plain;charset=utf-8' }));
-  const status = document.querySelector('#form-status');
-  status.replaceChildren(document.createTextNode('Vaš upit je pripremljen, ali nije poslat. '));
-  const link = document.createElement('a');
-  link.href = downloadUrl;
-  link.download = 'West Life-upit.txt';
-  link.textContent = 'Preuzmite upit';
-  status.append(link);
-  status.hidden = false;
-});
-document.querySelector('#year').textContent = new Date().getFullYear();
+});document.querySelector('#year').textContent = new Date().getFullYear();
 
 // Partner access is independent of the public contact form.
 const generaliAccess = document.querySelector('#generali-access');

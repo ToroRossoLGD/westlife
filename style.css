@@ -20,10 +20,11 @@ footer a:hover{color:var(--lime)}
 .footer-contact-details{display:flex;gap:80px;padding:28px 0 32px;border-top:1px solid #ffffff26}
 .footer-contact-details h3{font-size:12px;font-weight:600;margin:0 0 9px}
 .footer-contact-details a,.footer-contact-details address{font-size:18px;font-style:normal;color:#e5eddf}
+.footer-contact-links{display:flex;align-items:flex-start;flex-direction:column;gap:8px}
 .footer-contact-details h3{color:#c5d89c}
 .footer-contact-details a:hover{color:var(--lime);text-decoration:underline}
 .footer-bottom{border-color:#ffffff26;color:#c0cec5}
-@media(max-width:760px){nav{align-items:stretch}.about-links{position:static;min-width:0;margin-top:12px;box-shadow:none;background:#f0f3eb}.about-toggle{width:100%;justify-content:space-between}.footer-contact-details{flex-wrap:wrap;gap:25px 55px}}
+@media(max-width:760px){nav{align-items:stretch}.about-links{position:static;min-width:0;margin-top:12px;box-shadow:none;background:#f0f3eb}.about-toggle{width:100%;justify-content:space-between}.footer-contact-details{flex-wrap:wrap;gap:25px 55px}.footer-contact-links{align-items:flex-start;flex-direction:column;gap:8px}}
 .partner-access{min-width:270px;max-width:100%}
 .partner-link{display:flex;flex-direction:column;gap:19px;padding:25px 30px;border:1px solid var(--line);border-radius:10px;background:#fff;transition:border-color .2s,box-shadow .2s}
 .partner-wordmark{font-family:Georgia,serif;font-size:29px;letter-spacing:2px;color:#b21e25}
@@ -67,8 +68,12 @@ footer a:hover{color:var(--lime)}
 .logo{gap:11px;letter-spacing:-.8px;flex-shrink:0;white-space:nowrap}
 .brand-emblem{display:block;width:76px;height:49px;flex-shrink:0;color:var(--green)}
 .brand-name{font-family:Manrope,sans-serif;font-size:25px;font-weight:650;letter-spacing:-.8px}
+.brand-lockup{display:flex;flex-direction:column;align-items:flex-start;gap:3px;line-height:1}
+.brand-legal{font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:.1px;color:#617168;white-space:nowrap}
+.brand-title{display:flex;align-items:baseline;gap:6px}
+.brand-suffix{font-family:Manrope,sans-serif;font-size:13px;font-weight:650;letter-spacing:-.25px;color:var(--green)}
 footer .brand-emblem{color:#d9e9a5}
 footer .brand-name{color:#fff}
-@media(max-width:1100px){header{gap:20px}.brand-emblem{width:65px;height:42px}.brand-name{font-size:22px}}
-@media(max-width:760px){header{gap:12px}.logo{gap:8px}.brand-emblem{width:56px;height:36px}.brand-name{font-size:20px}footer .brand-emblem{width:76px;height:49px}footer .brand-name{font-size:25px}}
-@media(max-width:380px){header{padding-inline:4%;gap:8px}.brand-emblem{width:48px;height:31px}.brand-name{font-size:18px}.header-cta{gap:10px}.menu-toggle{padding:4px}}
+@media(max-width:1100px){header{gap:20px}.brand-emblem{width:65px;height:42px}.brand-name{font-size:22px}.brand-legal{font-size:10px}.brand-suffix{font-size:12px}}
+@media(max-width:760px){header{gap:12px}.logo{gap:8px}.brand-emblem{width:56px;height:36px}.brand-name{font-size:20px}.brand-lockup{gap:2px}.brand-legal{font-size:9px;letter-spacing:0}.brand-suffix{font-size:10px}footer .brand-emblem{width:76px;height:49px}footer .brand-name{font-size:25px}}
+@media(max-width:380px){header{padding-inline:4%;gap:8px}.brand-emblem{width:48px;height:31px}.brand-name{font-size:18px}.brand-legal{font-size:8px}.brand-suffix{font-size:9px}.header-cta{gap:10px}.menu-toggle{padding:4px}}
